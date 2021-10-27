@@ -1,0 +1,27 @@
+<nav class="col-md-3 col-lg-2 d-md-block bg-light-lexsoft sidebar collapse">
+    <h1>SIDEBAR</h1>
+    <div class="position-sticky pt-4">
+        <ul class="nav nav-pills flex-column mb-auto">
+            <li class="nav-item">
+                <a routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" [routerLink]="['mf-header']" class="nav-link active" aria-current="page">
+                    <div class="row">
+                        <div class="col text-start">
+                            <span>Main</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a routerLinkActive="active" [routerLink]="['mf-informes']" class="nav-link" aria-current="page">
+                    <div class="row">
+                        <div class="col text-start">
+                            <span>Informes</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+<router-outlet></router-outlet>
