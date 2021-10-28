@@ -15,7 +15,7 @@ export class AppComponent {
     initializeValues() {}
 
     onLogin(){
-      this.router.navigate([`mf-header`]);
+      this.router.navigate([`mf-main`]);
     }
 
 }

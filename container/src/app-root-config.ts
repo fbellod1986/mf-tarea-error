@@ -54,7 +54,7 @@ registerApplication({
   name: "@app/mf-informes",
   app: () => System.import("@app/mf-informes"),
   activeWhen: (location) => {
-    return isActive.showWhenAnyOf('@app/mf-informes', MainList, location)
+    return isActive.showWhenPrefix('@app/mf-informes', MainList, location)
   }
 });
 

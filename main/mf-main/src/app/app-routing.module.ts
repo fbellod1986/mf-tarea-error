@@ -5,8 +5,14 @@ import { AppComponent } from "./app.component";
 import { EmptyRouteComponent } from "./empty-route/empty-route.component";
 
 const routes: Routes = [
-  { path: 'mf-main', component: AppComponent},
+  { 
+    path: 'mf-main',
+    children: [
+      { path: 'main', loadChildren: () => import('./views/components/main/main.module').then(m => m.MainModule) },
+    ]
+  },
   { path: "**", component: EmptyRouteComponent }
+
 ];
 
 @NgModule({
